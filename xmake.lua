@@ -55,7 +55,7 @@ target("plugin") -- Change this to your plugin name.
         "SDK/Lib/GMLIB"
     )
     add_includedirs(
-        "SDK",
+        "SDK-GMLIB",
         "src"
     )
     add_packages(
