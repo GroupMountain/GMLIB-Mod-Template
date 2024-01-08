@@ -52,7 +52,7 @@ target("plugin") -- Change this to your plugin name.
         "src/**.cpp"
     )
     add_links(
-        "SDK/Lib/GMLIB"
+        "SDK-GMLIB/Lib/GMLIB"
     )
     add_includedirs(
         "SDK-GMLIB",
