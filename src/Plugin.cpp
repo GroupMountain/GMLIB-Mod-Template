@@ -1,5 +1,5 @@
-#include "Global.h"
 #include "Plugin.h"
+#include "Global.h"
 
 ll::Logger logger(PLUGIN_NAME);
 
