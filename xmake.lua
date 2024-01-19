@@ -66,7 +66,7 @@ target("plugin") -- Change this to your plugin name.
     )
     set_exceptions("none") -- To avoid conflicts with /EHa
     set_kind("shared")
-    set_languages("cxx20")
+    set_languages("cxx23")
 
     after_build(function (target)
         local plugin_packer = import("scripts.after_build")
