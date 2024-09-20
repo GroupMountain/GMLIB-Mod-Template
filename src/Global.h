@@ -1,6 +1,6 @@
 #pragma once
 #include <include_all.h>
 
-#define PLUGIN_NAME "GMLIB-Plugin-Template"
+#define MOD_NAME "GMLIB-Mod-Template"
 
 extern ll::Logger logger;

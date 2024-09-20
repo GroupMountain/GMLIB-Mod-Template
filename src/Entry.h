@@ -1,33 +1,33 @@
 #pragma once
-#include <ll/api/plugin/NativePlugin.h>
-#include <ll/api/plugin/RegisterHelper.h>
+#include <ll/api/mod/NativeMod.h>
+#include <ll/api/mod/RegisterHelper.h>
 
-namespace my_plugin {
+namespace my_mod {
 
-class MyPlugin {
+class MyMod {
 
 public:
-    static std::unique_ptr<MyPlugin>& getInstance();
+    static std::unique_ptr<MyMod>& getInstance();
 
-    MyPlugin(ll::plugin::NativePlugin& self) : mSelf(self) {}
+    MyMod(ll::mod::NativeMod& self) : mSelf(self) {}
 
-    [[nodiscard]] ll::plugin::NativePlugin& getSelf() const { return mSelf; }
+    [[nodiscard]] ll::mod::NativeMod& getSelf() const { return mSelf; }
 
-    /// @return True if the plugin is loaded successfully.
+    /// @return True if the mod is loaded successfully.
     bool load();
 
-    /// @return True if the plugin is enabled successfully.
+    /// @return True if the mod is enabled successfully.
     bool enable();
 
-    /// @return True if the plugin is disabled successfully.
+    /// @return True if the mod is disabled successfully.
     bool disable();
 
-    // TODO: Implement this method if you need to unload the plugin.
-    // /// @return True if the plugin is unloaded successfully.
+    // TODO: Implement this method if you need to unload the mod.
+    // /// @return True if the mod is unloaded successfully.
     // bool unload();
 
 private:
-    ll::plugin::NativePlugin& mSelf;
+    ll::mod::NativeMod& mSelf;
 };
 
-} // namespace my_plugin
+} // namespace my_mod
