@@ -45,7 +45,7 @@ jobs:
 
       - name: Copy additional files
         run: |
-          cp -v CHANGELOG.md LICENSE README.md artifact/
+          cp -v LICENSE README.md artifact/
 
       - name: Archive release
         run: |
