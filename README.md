@@ -1,2 +1,2 @@
-# GMLIB-Plugin-Template
-Template for plugins using GMLIB
+# GMLIB-Mod-Template
+Template for mods using GMLIB

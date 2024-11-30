@@ -1,30 +1,28 @@
-#include "Entry.h"
 #include "Global.h"
-
-ll::Logger logger(MOD_NAME);
 
 namespace my_mod {
 
-std::unique_ptr<MyMod>& MyMod::getInstance() {
-    static std::unique_ptr<MyMod> instance;
+std::unique_ptr<Entry>& Entry::getInstance() {
+    static std::unique_ptr<Entry> instance;
     return instance;
 }
 
-bool MyMod::load() {
-    // Code for loading the mod goes here.
+bool Entry::load() {
     return true;
 }
 
-bool MyMod::enable() {
-    // Code for enabling the mod goes here.
+bool Entry::enable() {
     return true;
 }
 
-bool MyMod::disable() {
-    // Code for disabling the mod goes here.
+bool Entry::disable() {
     return true;
 }
+
+// bool Entry::unload() {
+//     return true;
+// }
 
 } // namespace my_mod
 
-LL_REGISTER_MOD(my_mod::MyMod, my_mod::MyMod::getInstance());
+LL_REGISTER_MOD(my_mod::Entry, my_mod::Entry::getInstance());
