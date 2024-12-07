@@ -1,10 +1,10 @@
 {
-    "name": "${pluginName}",
-    "entry": "${pluginFile}",
+    "name": "${modName}",
+    "entry": "${modFile}",
+    "version": "${modVersion}",
     "type": "native",
     "author": "author",
     "description": "description",
-    "version": "0.0.0",
     "dependencies": [
         {
             "name": "GMLIB"
