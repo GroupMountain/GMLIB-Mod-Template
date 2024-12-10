@@ -53,7 +53,7 @@ target("GMLIB-Mod-Template") -- Change this to your mod name.
 
         local version = get_config("version")
         if version == "" then
-            version = os.iorun("git describe --tags --abbrev=0 --always"):match("(\\d+.\\d+.\\d+)")
+            version = os.iorun("git describe --tags --abbrev=0 --always"):match("(%d+.%d+.%d+)")
             if not version then
                 print("Failed to parse version tag, using 0.0.0")
                 version = "0.0.0"
